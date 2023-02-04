@@ -12,3 +12,5 @@ class TodoList(models.Model):
     title = models.CharField(max_length=100, blank=False)
     details = models.TextField(max_length=500)
     date = models.DateTimeField()
+    todo_id = models.ForeignKey(User,related_name="ref_id")
+
