@@ -11,4 +11,4 @@ class User(forms.ModelForm):
 class TodoList(models.Model):
     title = models.CharField(max_length=100, blank=False)
     details = models.TextField(max_length=500)
-    date = models.DateTimeField(default=timezone.now)
+    date = models.DateTimeField()
